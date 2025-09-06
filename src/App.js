@@ -7,6 +7,7 @@ import Login from './components/auth/Login';
 import Signup from './components/auth/Signup';
 import Dashboard from './components/dashboard/Dashboard';
 import Courses from './components/courses/Courses';
+import Assignment from './components/assignments/Assignment';
 import './App.css';
 
 function App() {
@@ -36,10 +37,7 @@ function App() {
               {/* Future Protected Routes - Add these as you build more features */}
               <Route path="/assignments" element={
                 <ProtectedRoute>
-                  <div className="p-8">
-                    <h1 className="text-2xl font-bold">Assignments Page</h1>
-                    <p>Coming soon...</p>
-                  </div>
+                  <Assignment />
                 </ProtectedRoute>
               } />
               
